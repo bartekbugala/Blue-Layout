@@ -513,11 +513,21 @@ footer>div:last-child {
     .col-s-12 {
         width: 100%;
     }
+
+
+
     header nav ul li a {
         font-size: 30px !important;
+        padding: 10px;
     }
     .gallery-tile {
         width: 80%;
+
+    }
+    .gallery img {
+        max-width: 70%;
+        height: auto;
+        margin-bottom: 20px;
     }
     .portrait {
         width: 50%;
@@ -532,9 +542,13 @@ footer>div:last-child {
         background-color: none;
         width: 100%;
         text-align: center;
-        padding: 0;
+        padding: 10px 0px;
         margin: 0;
     }
+    nav .logo {
+        padding: 10px;
+    }
+    
     .tablet-picture {
         background-image: none;
         background-color: rgba(0, 0, 0, 0.5);
