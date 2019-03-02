@@ -626,7 +626,7 @@ footer>div:last-child {
 
     div.job h4 {
         color: #fff;
-        text-shadow: 0 0 2px #aaa;
+        text-shadow: 0 0 2px #000;
         text-align: center;
         font-size: calc((4) * 1.2vw);
     }
@@ -674,6 +674,41 @@ footer>div:last-child {
         color: #fff;
         text-transform: uppercase;
         transition: background-color .3s linear, color .3s linear
+    }
+
+    .gallery-tile .layer {
+        height: 100%;
+        cursor: pointer;
+        background: none
+    } 
+    .gallery-tile .layer i {
+        z-index: 100;
+        transition: unset
+    }
+
+    .portrait div.job, .portrait:hover div.job {
+        background: none;
+        opacity: 1;
+        width: 100%;
+        height: 98%;
+        border-radius: 50%;
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: unset;
+        transition: unset;
+    }
+    
+    .job h4 {
+        z-index: 85;
+        position: absolute;
+        text-align: center;
+        top: 25%;
+        left: 25%;
+        color: #fff;
+        text-shadow: 0 0 3px #000;
+        font-size: 100%
     }
 
     .clearfix-m::after,
