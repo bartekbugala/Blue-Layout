@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box
-}
+* {box-sizing: border-box}
 
 body {
     font-family: Raleway, Sans-serif;
@@ -28,53 +26,18 @@ h3 {
     clear: both
 }
 
-.col-1 {
-    width: 8.33%
-}
-
-.col-2 {
-    width: 16.66%
-}
-
-.col-3 {
-    width: 25%
-}
-
-.col-4 {
-    width: 33.33%
-}
-
-.col-5 {
-    width: 41.66%
-}
-
-.col-6 {
-    width: 50%
-}
-
-.col-7 {
-    width: 58.33%
-}
-
-.col-8 {
-    width: 66.66%
-}
-
-.col-9 {
-    width: 75%
-}
-
-.col-10 {
-    width: 83.33%
-}
-
-.col-11 {
-    width: 91.66%
-}
-
-.col-12 {
-    width: 100%
-}
+.col-1{width:8.33%}
+.col-2{width:16.66%}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.66%}
+.col-6{width:50%}
+.col-7{width:58.33%}
+.col-8{width:66.66%}
+.col-9{width:75%}
+.col-10{width:83.33%}
+.col-11{width:91.66%}
+.col-12{width:100%}
 
 header {
     background-color: #313332
@@ -372,7 +335,7 @@ div.job {
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(#313332, #04c8e9);
+    background-image: linear-gradient(#313332, #04c8e9)
 }
 
 .tablet-picture>div {
@@ -415,7 +378,7 @@ div.job {
     margin: 0 10px;
     color: #323433;
     margin-bottom: 0;
-    background-color: green;
+    background-color: green
 }
 
 .counters h3 {
@@ -424,7 +387,7 @@ div.job {
     line-height: 1;
     text-transform: uppercase;
     color: #00c7e8;
-    background-color: red;
+    background-color: red
 }
 
 footer {
@@ -464,53 +427,19 @@ footer>div:last-child {
 }
 
 @media (max-width:767px) {
-    .col-s-1 {
-        width: 8.33%
-    }
 
-    .col-s-2 {
-        width: 16.66%
-    }
-
-    .col-s-3 {
-        width: 25%
-    }
-
-    .col-s-4 {
-        width: 33.33%
-    }
-
-    .col-s-5 {
-        width: 41.66%
-    }
-
-    .col-s-6 {
-        width: 50%
-    }
-
-    .col-s-7 {
-        width: 58.33%
-    }
-
-    .col-s-8 {
-        width: 66.66%
-    }
-
-    .col-s-9 {
-        width: 75%
-    }
-
-    .col-s-10 {
-        width: 83.33%
-    }
-
-    .col-s-11 {
-        width: 91.66%
-    }
-
-    .col-s-12 {
-        width: 100%
-    }
+    .col-s-1{width:8.33%}
+    .col-s-2{width:16.66%}
+    .col-s-3{width:25%}
+    .col-s-4{width:33.33%}
+    .col-s-5{width:41.66%}
+    .col-s-6{width:50%}
+    .col-s-7{width:58.33%}
+    .col-s-8{width:66.66%}
+    .col-s-9{width:75%}
+    .col-s-10{width:83.33%}
+    .col-s-11{width:91.66%}
+    .col-s-12{width:100%}
 
     .benefits p,
     .header-text p,
@@ -617,7 +546,7 @@ footer>div:last-child {
         background-image: url(https://www.plyty-abo.pl/webdev/phone.png);
         background-repeat: no-repeat;
         background-position: left bottom;
-        background-size: 50%;
+        background-size: 50%
     }
 
     .tablet-picture::before {
@@ -629,7 +558,7 @@ footer>div:last-child {
         background-position: center;
         background-image: linear-gradient(#313332, #04c8e9);
         width: 100%;
-        z-index: -1;
+        z-index: -1
     }
 
     .tablet-picture>div {
@@ -645,23 +574,19 @@ footer>div:last-child {
     .tablet-picture h1 {
         position: relative;
         right: 8vw;
-
         width: 100%;
-        text-align: right;
-
+        text-align: right
     }
 
-
     .gallery-tile .layer {
-        background: none;
+        background: 0 0;
         opacity: 1;
         height: 100%;
         width: 100%;
         left: 100%;
         top: 100%;
-        transition: unset;
+        transition: unset
     }
-
 
     .gallery-tile .layer i {
         display: block;
@@ -678,69 +603,32 @@ footer>div:last-child {
         opacity: .7;
         left: unset;
         top: unset;
-        transition: unset;
-
+        transition: unset
     }
 
     .gallery-tile .layer .fa-camera-retro {
-        display: none;
+        display: none
     }
 
     .gallery-tile .layer .fa-search {
         top: -55%;
-        left: -55%;
-
+        left: -55%
     }
 }
-
 @media (min-width:768px) and (max-width:1199px) {
-    .col-m-1 {
-        width: 8.33%
-    }
 
-    .col-m-2 {
-        width: 16.66%
-    }
-
-    .col-m-3 {
-        width: 25%
-    }
-
-    .col-m-4 {
-        width: 33.33%
-    }
-
-    .col-m-5 {
-        width: 41.66%
-    }
-
-    .col-m-6 {
-        width: 50%
-    }
-
-    .col-m-7 {
-        width: 58.33%
-    }
-
-    .col-m-8 {
-        width: 66.66%
-    }
-
-    .col-m-9 {
-        width: 75%
-    }
-
-    .col-m-10 {
-        width: 83.33%
-    }
-
-    .col-m-11 {
-        width: 91.66%
-    }
-
-    .col-m-12 {
-        width: 100%
-    }
+    .col-m-1{width:8.33%}
+    .col-m-2{width:16.66%}
+    .col-m-3{width:25%}
+    .col-m-4{width:33.33%}
+    .col-m-5{width:41.66%}
+    .col-m-6{width:50%}
+    .col-m-7{width:58.33%}
+    .col-m-8{width:66.66%}
+    .col-m-9{width:75%}
+    .col-m-10{width:83.33%}
+    .col-m-11{width:91.66%}
+    .col-m-12{width:100%}
 
     header>nav ul {
         margin-right: 8%
