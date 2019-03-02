@@ -442,11 +442,12 @@ footer>div:last-child {
     .header-text p,
     .tablet-picture p {
         font-size: 16px;
-        text-align: justify;
+        text-aklign: justify;
         hyphens: auto;
         -ms-hyphens: auto;
         -o-hyphens: auto;
         -moz-hyphens: auto;
+        -epub-hyphens: auto;
         -webkit-hyphens: auto;
         padding: 0 8vw
     }
@@ -454,7 +455,7 @@ footer>div:last-child {
     nav .logo {
         float: none;
         display: block;
-        background-color: none;
+        background: none;
         width: 100%;
         text-align: center;
         max-width: 250px;
@@ -474,7 +475,7 @@ footer>div:last-child {
     header>nav ul {
         float: none;
         display: block;
-        background-color: none;
+        background: none;
         width: 100%;
         text-align: center
     }
@@ -731,7 +732,7 @@ footer>div:last-child {
     footer p {
         text-align: left;
     }
-    footer p:first-of-kind {
+    footer p:first-of-type {
         text-align: justify
     }
     footer>div {
