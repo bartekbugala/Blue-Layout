@@ -442,7 +442,7 @@ footer>div:last-child {
     .header-text p,
     .tablet-picture p {
         font-size: 16px;
-        text-aklign: justify;
+        text-align: justify;
         hyphens: auto;
         -ms-hyphens: auto;
         -o-hyphens: auto;
@@ -467,7 +467,7 @@ footer>div:last-child {
     header>nav ul>li {
         float: none;
         display: block;
-        background-color: none;
+        background: none;
         width: 100%;
         text-align: center
     }
