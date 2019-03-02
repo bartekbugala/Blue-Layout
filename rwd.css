@@ -1,95 +1,94 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
-    font-family: 'Raleway', Sans-serif;
+    font-family: Raleway, Sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #fff
 }
 
-h1, h2, h3 {
-    text-transform: uppercase;
+h1,
+h2,
+h3 {
+    text-transform: uppercase
 }
 
 .container {
     margin: 0 auto;
     display: block;
-    max-width: 1200px;
+    max-width: 1200px
 }
 
-/*---------------- GRID ---------------*/
-
-.clearfix::after, .clearfix::before {
+.clearfix::after,
+.clearfix::before {
     content: " ";
     display: table;
-    clear: both;
+    clear: both
 }
 
 .col-1 {
-    width: 8.33%;
+    width: 8.33%
 }
 
 .col-2 {
-    width: 16.66%;
+    width: 16.66%
 }
 
 .col-3 {
-    width: 25%;
+    width: 25%
 }
 
 .col-4 {
-    width: 33.33%;
+    width: 33.33%
 }
 
 .col-5 {
-    width: 41.66%;
+    width: 41.66%
 }
 
 .col-6 {
-    width: 50%;
+    width: 50%
 }
 
 .col-7 {
-    width: 58.33%;
+    width: 58.33%
 }
 
 .col-8 {
-    width: 66.66%;
+    width: 66.66%
 }
 
 .col-9 {
-    width: 75%;
+    width: 75%
 }
 
 .col-10 {
-    width: 83.33%;
+    width: 83.33%
 }
 
 .col-11 {
-    width: 91.66%;
+    width: 91.66%
 }
 
 .col-12 {
-    width: 100%;
+    width: 100%
 }
 
-/* ------------------- Header ------------------- */
-
 header {
-    background-color: #313332;
+    background-color: #313332
 }
 
 nav {
-    min-height: 50px;
+    min-height: 50px
 }
 
 nav .logo {
     float: left;
     width: 150px;
     margin-left: 10%;
-    padding-top: 15px;
+    padding-top: 15px
 }
 
 header>nav ul {
@@ -97,85 +96,82 @@ header>nav ul {
     padding: 0;
     list-style-type: none;
     float: right;
-    margin-right: 15%;
+    margin-right: 15%
 }
 
 header>nav ul>li {
-    float: left;
+    float: left
 }
 
 header>nav ul>li>a {
     display: block;
-    font-size: 0.8em;
+    font-size: .8em;
     font-weight: 600;
     line-height: 50px;
     padding: 0 12px;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    transition: background-color .3s linear, color .3s linear;
+    transition: background-color .3s linear, color .3s linear
 }
 
-.blue, header>nav ul>li>a:active {
-    color: #04c8e9;
+.blue,
+header>nav ul>li>a:active {
+    color: #04c8e9
 }
 
-header>nav ul>li>a:hover {
+header>nav ul>li:hover {
     background-color: #6b6b6b;
     color: #04c8e9
 }
 
 header>nav img {
-    padding: 10px 0;
+    padding: 10px 0
 }
-
-/* ------------------- Hero --------------------- */
 
 .hero {
     height: 380px;
-    background-image: url("https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg");
+    background-image: url(https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg);
     background-position-y: 55%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover
 }
 
 .hero>div {
-    background-color: rgba(107, 107, 107, 0.5);
+    background-color: rgba(107, 107, 107, .5);
     float: right;
     max-width: 900px;
     padding: 10px 24% 10px 10px;
     position: relative;
     top: 25%;
     bottom: 25%;
-    height: 150px;
+    height: 150px
 }
 
 .hero>div h1 {
     font-weight: 400;
     color: #fff;
-    text-align: left;
+    text-align: left
 }
 
 .bold {
-    font-weight: 900;
+    font-weight: 900
 }
-
-/* --------------------- Benefits ----------------- */
 
 .benefits {
     background-color: #fff;
-    min-height: 330px;
+    min-height: 330px
 }
 
 .col {
     float: left;
-    Min-height: 1px;
+    Min-height: 1px
 }
 
 section.benefits>div {
     padding-top: 50px;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .benefits i {
@@ -186,15 +182,15 @@ section.benefits>div {
     padding: 15px;
     margin: 0 auto;
     font-size: 50px;
-    color: white;
+    color: #fff;
     background-color: #313332;
     border-radius: 10px;
-    transition: background-color .3s linear;
+    transition: background-color .3s linear
 }
 
 .benefits i:hover {
     background-color: #00c7e8;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .benefits h3 {
@@ -205,12 +201,13 @@ section.benefits>div {
     text-align: center;
     padding: 0 15%;
     color: #313332;
-    word-wrap: break-word;
+    word-wrap: break-word
 }
 
-.benefits i:hover+h3, h3.blue-benefit {
+.benefits i:hover+h3,
+h3.blue-benefit {
     color: #00c7e8;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .benefits p {
@@ -219,27 +216,25 @@ section.benefits>div {
     margin-top: 0;
     text-align: center;
     padding: 0 15%;
-    color: #ccc;
-    word-wrap: break-word;
+    color: #888;
+    word-wrap: break-word
 }
-
-/* -------------- Header Text ----------------*/
 
 .header-text {
     background-color: #fff;
-    padding-bottom: 10px;
+    padding-bottom: 10px
 }
 
 .header-text>div {
     width: 50%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .header-text h1 {
     color: #313332;
     font-size: 28px;
-    margin-top: 0;
+    margin-top: 0
 }
 
 .header-text p {
@@ -248,21 +243,19 @@ section.benefits>div {
     margin-top: 0;
     text-align: center;
     color: #ccc;
-    word-wrap: break-word;
+    word-wrap: break-word
 }
-
-/* --------------- Gallery --------------*/
 
 .gallery .col {
     display: block;
-    line-height: 0;
+    line-height: 0
 }
 
 .gallery img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    width: auto;
     object-fit: cover;
-    padding: 0;
+    padding: 0
 }
 
 .gallery .col .gallery-tile {
@@ -272,63 +265,62 @@ section.benefits>div {
     display: block;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 0;
+    padding-bottom: 0
 }
 
 .gallery-tile .layer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5);
     opacity: 1;
     width: 100%;
     height: 0;
     position: absolute;
-    top: 0%;
-    left: 0%;
-    transition: height .3s linear;
+    top: 0;
+    left: 0;
+    transition: height .3s linear
 }
 
 .gallery-tile:hover .layer {
     height: 100%;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .gallery-tile .layer i {
     position: absolute;
     background-color: #ccc;
-    padding: 0.5vw;
-    border-radius: 0.2vw;
-    border: solid #ccc 0.2vw;
+    padding: .5vw;
+    border-radius: .2vw;
+    border: solid #ccc .2vw;
     color: #000;
     top: 40%;
     overflow: hidden;
-    transition: z-index 0.6s linear;
-    z-index: -100;
+    transition: z-index .6s linear;
+    z-index: -100
 }
 
 .gallery-tile:hover .layer i {
     z-index: 100;
-    transition: z-index .1s linear;
+    transition: z-index .1s linear
 }
 
 .fa-camera-retro {
-    left: 30%;
+    left: 30%
 }
 
 .fa-search {
-    left: 60%;
+    left: 60%
 }
 
-/* -------------------Staff------------------------  */
-
 .staff img {
-    width: 100%;
-    border-radius: 50%;
+    max-width: 100%;
+    height: auto
+    border-radius: 50%
 }
 
 section.staff>div {
     padding-top: 50px;
     width: 80%;
     margin: 0 auto;
-    text-align: center;
+    text-align: center
 }
 
 .staff h4 {
@@ -339,17 +331,17 @@ section.staff>div {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    display: inline-block;
+    display: inline-block
 }
 
 .portrait div.job {
     opacity: 0;
-    transition: opacity 1s linear;
+    transition: opacity 1s linear
 }
 
 .portrait:hover div.job {
-    background-color: darkgrey;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #a9a9a9;
+    background-color: rgba(0, 0, 0, .5);
     opacity: 1;
     width: 100%;
     height: 98%;
@@ -367,23 +359,21 @@ section.staff>div {
     text-align: center;
     top: 25%;
     left: 25%;
-    color: lightgray;
-    font-size: 100%;
+    color: #d3d3d3;
+    font-size: 100%
 }
 
 div.job {
-    background-color: white;
-    background-color: rgba(0, 0, 0, 0.0);
-    opacity: 0;
+    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0
 }
-
-/* ----------- tablet-picture ---------------*/
 
 .tablet-picture {
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(#313332, #04c8e9);
+    background-image: linear-gradient(#313332, #04c8e9)
 }
 
 .tablet-picture>div {
@@ -391,33 +381,31 @@ div.job {
     color: #fff;
     margin: 0 auto;
     max-width: 850px;
-    background-image: url("https://www.plyty-abo.pl/webdev/phone.png");
+    background-image: url(https://www.plyty-abo.pl/webdev/phone.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 200px;
+    background-size: 200px
 }
 
 .tablet h1 {
-    padding-top: 40px;
+    padding-top: 40px
 }
 
 .tablet p {
-    padding: 0 10px;
+    padding: 0 10px
 }
-
-/* -------------------- Counters-----------*/
 
 .counters {
     width: 70%;
     margin: 0 auto;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 40px
 }
 
 .counters div div {
     text-align: center;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 10px
 }
 
 .counters h1 {
@@ -426,7 +414,7 @@ div.job {
     font-weight: 900;
     line-height: 0;
     padding: 0;
-    color: #323433;
+    color: #323433
 }
 
 .counters h3 {
@@ -434,19 +422,17 @@ div.job {
     padding: 0;
     line-height: 0;
     text-transform: uppercase;
-    color: #00c7e8;
+    color: #00c7e8
 }
-
-/* --------------------- footer ----------------------- */
 
 footer {
     background-color: #313332;
-    color: white;
+    color: #fff
 }
 
 footer>div:first-child {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 20px
 }
 
 footer .line2:after {
@@ -455,7 +441,7 @@ footer .line2:after {
     width: 8vw;
     height: 6px;
     margin-left: 10px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #fff
 }
 
 .social-icons i {
@@ -464,95 +450,125 @@ footer .line2:after {
     background-color: #00c7e8;
     padding: 4px;
     margin-left: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 8px
 }
 
 footer>div:last-child {
     text-align: center;
     color: #ccc;
-    background-color: black;
+    background-color: #000;
     height: 50px;
-    line-height: 50px;
+    line-height: 50px
 }
 
-@media (max-width: 767px) {
-    /* For tablets: */
+@media (max-width:767px) {
     .col-s-1 {
-        width: 8.33%;
+        width: 8.33%
     }
+
     .col-s-2 {
-        width: 16.66%;
+        width: 16.66%
     }
+
     .col-s-3 {
-        width: 25%;
+        width: 25%
     }
+
     .col-s-4 {
-        width: 33.33%;
+        width: 33.33%
     }
+
     .col-s-5 {
-        width: 41.66%;
+        width: 41.66%
     }
+
     .col-s-6 {
-        width: 50%;
+        width: 50%
     }
+
     .col-s-7 {
-        width: 58.33%;
+        width: 58.33%
     }
+
     .col-s-8 {
-        width: 66.66%;
+        width: 66.66%
     }
+
     .col-s-9 {
-        width: 75%;
+        width: 75%
     }
+
     .col-s-10 {
-        width: 83.33%;
+        width: 83.33%
     }
+
     .col-s-11 {
-        width: 91.66%;
+        width: 91.66%
     }
+
     .col-s-12 {
-        width: 100%;
+        width: 100%
     }
 
-
-
-    header nav ul li a {
-        font-size: 30px !important;
-        padding: 10px;
-    }
-    .gallery-tile {
-        width: 80%;
-
-    }
-    .gallery img {
-        max-width: 70%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-    .portrait {
-        width: 50%;
-    }
-    p, footer div {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    nav .logo, header>nav ul, header>nav ul>li {
+    nav .logo {
         float: none;
         display: block;
         background-color: none;
         width: 100%;
         text-align: center;
-        padding: 10px 0px;
-        margin: 0;
-    }
-    nav .logo {
+        max-width: 250px;
+        height: auto;
         padding: 10px;
+        margin: 0 auto
     }
-    
+
+    header>nav ul>li {
+        float: none;
+        display: block;
+        background-color: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header>nav ul {
+        float: none;
+        display: block;
+        background-color: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 10px 0;
+    }
+
+    .benefits p {
+        font-size: 12px;
+    }
+
+    .gallery img {
+        max-width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .portrait {
+        width: 50%;
+    }
+
+    footer div,
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .tablet-picture {
         background-image: none;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, .5)
     }
+
     .tablet-picture>div {
         display: block;
         position: relative;
@@ -562,15 +578,16 @@ footer>div:last-child {
         margin: 0 auto;
         background-image: none;
     }
+
     .tablet-picture>div::after {
         content: "";
         position: absolute;
         color: #fff;
-        background-image: url("https://www.plyty-abo.pl/webdev/phone.png");
+        background-image: url(https://www.plyty-abo.pl/webdev/phone.png);
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: 200px;
-        opacity: 0.4;
+        opacity: .4;
         z-index: -1;
         top: 0;
         left: 0;
@@ -579,11 +596,11 @@ footer>div:last-child {
     }
 
     .gallery-tile .layer {
-        background: none;
+        background: 0 0;
         opacity: 1;
         height: 100%;
     }
-       
+
     .gallery-tile .layer i {
         line-height: 50px;
         z-index: 100;
@@ -592,47 +609,56 @@ footer>div:last-child {
         height: 50px;
         width: 50px;
         vertical-align: middle;
-        opacity: 0.7;
+        opacity: .7
     }
-
 }
 
-@media (min-width: 768px) {
-    /* For desktop: */
+@media (min-width:768px) {
     .col-m-1 {
-        width: 8.33%;
+        width: 8.33%
     }
+
     .col-m-2 {
-        width: 16.66%;
+        width: 16.66%
     }
+
     .col-m-3 {
-        width: 25%;
+        width: 25%
     }
+
     .col-m-4 {
-        width: 33.33%;
+        width: 33.33%
     }
+
     .col-m-5 {
-        width: 41.66%;
+        width: 41.66%
     }
+
     .col-m-6 {
-        width: 50%;
+        width: 50%
     }
+
     .col-m-7 {
-        width: 58.33%;
+        width: 58.33%
     }
+
     .col-m-8 {
-        width: 66.66%;
+        width: 66.66%
     }
+
     .col-m-9 {
-        width: 75%;
+        width: 75%
     }
+
     .col-m-10 {
-        width: 83.33%;
+        width: 83.33%
     }
+
     .col-m-11 {
-        width: 91.66%;
+        width: 91.66%
     }
+
     .col-m-12 {
-        width: 100%;
+        width: 100%
     }
 }
