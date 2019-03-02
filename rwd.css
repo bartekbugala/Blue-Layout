@@ -159,7 +159,6 @@ header>nav img {
 }
 
 .benefits {
-    background-color: #fff;
     min-height: 330px
 }
 
@@ -168,7 +167,7 @@ header>nav img {
     Min-height: 1px
 }
 
-section.benefits>div {
+.benefits>div {
     padding-top: 50px;
     width: 80%;
     margin: 0 auto
@@ -177,9 +176,10 @@ section.benefits>div {
 .benefits i {
     display: block;
     width: 100px;
-    height: 80px;
+    height: 100px;
+    line-height: 100px;
     text-align: center;
-    padding: 15px;
+    vertical-align: middle;
     margin: 0 auto;
     font-size: 50px;
     color: #fff;
@@ -252,8 +252,8 @@ h3.blue-benefit {
 }
 
 .gallery img {
+    display: block;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     padding: 0
 }
@@ -372,7 +372,7 @@ div.job {
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(#313332, #04c8e9)
+    background-image: linear-gradient(#313332, #04c8e9);
 }
 
 .tablet-picture>div {
@@ -409,19 +409,22 @@ div.job {
 
 .counters h1 {
     display: block;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
-    line-height: 0;
-    padding: 0;
-    color: #323433
+    line-height: 1.2;
+    margin: 0 10px;
+    color: #323433;
+    margin-bottom: 0;
+    background-color: green;
 }
 
 .counters h3 {
-    display: inline-block;
+    display: block;
     padding: 0;
-    line-height: 0;
+    line-height: 1;
     text-transform: uppercase;
-    color: #00c7e8
+    color: #00c7e8;
+    background-color: red;
 }
 
 footer {
@@ -509,6 +512,20 @@ footer>div:last-child {
         width: 100%
     }
 
+    .benefits p,
+    .header-text p,
+    .tablet-picture p,
+    footer p {
+        font-size: 16px;
+        text-align: justify;
+        hyphens: auto;
+        -ms-hyphens: auto;
+        -o-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        padding: 0 8vw
+    }
+
     nav .logo {
         float: none;
         display: block;
@@ -526,7 +543,7 @@ footer>div:last-child {
         display: block;
         background-color: none;
         width: 100%;
-        text-align: center;
+        text-align: center
     }
 
     header>nav ul {
@@ -534,33 +551,85 @@ footer>div:last-child {
         display: block;
         background-color: none;
         width: 100%;
-        text-align: center;
+        text-align: center
     }
 
     header nav ul li a {
         font-size: 30px;
-        padding: 10px 0;
+        font-weight: 500;
+        padding: 10px 0
+    }
+
+    .benefits {
+        margin-top: 0;
+        padding: 0
+    }
+
+    .benefits>div {
+        width: 100%
+    }
+
+    .benefits i {
+        margin-top: 10px;
+        line-height: 120px;
+        width: 120px;
+        height: 120px;
+        vertical-align: middle;
+        font-size: 80px
+    }
+
+    .benefits h3,
+    .header-text h1 {
+        color: #313332;
+        width: 100%;
+        font-size: 20px;
+        padding: 0 8vw
+    }
+
+    .benefits p,
+    .header-text p {
+        width: 100%;
+        padding: 0 8vw;
+        color: #aaa;
+        text-align: justify;
+        word-wrap: break-word
+    }
+
+    .header-text>div {
+        width: 100%
+    }
+
+    .header-text h1 {
+        margin-top: 20px;
+        font-size: 28px
     }
 
     .gallery img {
-        max-width: 90%;
-        height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 0
     }
 
     .portrait {
-        width: 50%;
-    }
-
-    footer div,
-    p {
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 50%
     }
 
     .tablet-picture {
-        background-image: none;
-        background-color: rgba(0, 0, 0, .5)
+        position: relative;
+        background-image: url(https://www.plyty-abo.pl/webdev/phone.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 50%;
+    }
+
+    .tablet-picture::before {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-image: linear-gradient(#313332, #04c8e9);
+        width: 100%;
+        z-index: -1;
     }
 
     .tablet-picture>div {
@@ -570,44 +639,61 @@ footer>div:last-child {
         width: auto;
         color: #fff;
         margin: 0 auto;
-        background-image: none;
+        background-image: none
     }
 
-    .tablet-picture>div::after {
-        content: "";
-        position: absolute;
-        color: #fff;
-        background-image: url(https://www.plyty-abo.pl/webdev/phone.png);
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        background-size: 200px;
-        opacity: .4;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+    .tablet-picture h1 {
+        position: relative;
+        right: 8vw;
+
+        width: 100%;
+        text-align: right;
+
     }
+
 
     .gallery-tile .layer {
-        background: 0 0;
+        background: none;
         opacity: 1;
         height: 100%;
+        width: 100%;
+        left: 100%;
+        top: 100%;
+        transition: unset;
     }
 
+
     .gallery-tile .layer i {
+        display: block;
+        position: relative;
+        float: left;
         line-height: 50px;
+        font-size: 30px;
         z-index: 100;
         box-shadow: 0 0 4px #ccc;
-        font-size: 30px;
         height: 50px;
         width: 50px;
-        vertical-align: middle;
-        opacity: .7
+        float: none;
+        padding: 0;
+        opacity: .7;
+        left: unset;
+        top: unset;
+        transition: unset;
+
+    }
+
+    .gallery-tile .layer .fa-camera-retro {
+        display: none;
+    }
+
+    .gallery-tile .layer .fa-search {
+        top: -55%;
+        left: -55%;
+
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width:1199px) {
     .col-m-1 {
         width: 8.33%
     }
@@ -654,5 +740,28 @@ footer>div:last-child {
 
     .col-m-12 {
         width: 100%
+    }
+
+    header>nav ul {
+        margin-right: 8%
+    }
+
+    header>nav ul>li>a {
+        display: block;
+        font-size: .8em;
+        font-weight: 600;
+        line-height: 50px;
+        padding: 0 8px;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        transition: background-color .3s linear, color .3s linear
+    }
+
+    .clearfix-m::after,
+    .clearfix-m::before {
+        content: " ";
+        display: table;
+        clear: both
     }
 }
