@@ -73,7 +73,7 @@ header>nav ul>li {
 
 header>nav ul>li>a {
     display: block;
-    font-size: .8em;
+    font-size: 1em;
     font-weight: 600;
     line-height: 50px;
     padding: 0 12px;
@@ -440,8 +440,7 @@ footer>div:last-child {
 
     .benefits p,
     .header-text p,
-    .tablet-picture p,
-    footer p {
+    .tablet-picture p {
         font-size: 16px;
         text-align: justify;
         hyphens: auto;
@@ -611,6 +610,15 @@ footer>div:last-child {
         top: -55%;
         left: -55%
     }
+    footer {
+        padding: 0;
+    }
+    footer p {
+        text-align: justify;
+    }
+    footer>div {
+        padding: 0 8vw;
+    }
 }
 @media (min-width:768px) and (max-width:1199px) {
 
@@ -648,5 +656,25 @@ footer>div:last-child {
         content: " ";
         display: table;
         clear: both
+    }
+    footer>div {
+        width: 100%;
+        margin: 0
+    }
+    footer .line2:after {
+        display: none 
+    }
+
+    footer>div>.col>p {
+        padding: 0 8px
+    }
+    footer p {
+        text-align: left;
+    }
+    footer p:first-of-kind {
+        text-align: justify
+    }
+    footer>div {
+        padding: 0 8vw
     }
 }
