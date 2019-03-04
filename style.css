@@ -216,6 +216,7 @@ h3.blue-benefit {
 .gallery img {
     display: block;
     width: 100%;
+    max-width: 100%;
     object-fit: cover;
     padding: 0
 }
@@ -274,6 +275,7 @@ h3.blue-benefit {
 
 .staff img {
     width: 100%;
+    max-width: 100%;
     border-radius: 50%
 }
 
@@ -443,12 +445,6 @@ footer>div:last-child {
     .tablet-picture p {
         font-size: 16px;
         text-align: justify;
-        hyphens: auto;
-        -ms-hyphens: auto;
-        -o-hyphens: auto;
-        -moz-hyphens: auto;
-        -epub-hyphens: auto;
-        -webkit-hyphens: auto;
         padding: 0 8vw
     }
 
@@ -523,7 +519,7 @@ footer>div:last-child {
         padding: 0 8vw;
         color: #aaa;
         text-align: justify;
-        word-wrap: break-word
+        word-break: normal;
     }
 
     .header-text>div {
@@ -538,12 +534,6 @@ footer>div:last-child {
     .gallery .col {
         display: block;
         line-height: 1;
-    }
-    
-    .gallery img {
-        display: block;
-        width: 100%;
-        object-fit: cover;
     }
     
     .gallery .col .gallery-tile {
@@ -565,8 +555,33 @@ footer>div:last-child {
         transition: unset
     }    
 
-    .portrait {
-        width: 50%
+    .portrait div.job, .portrait:hover div.job {
+        background: none;
+        cursor: unset;
+        transition: unset;
+        position: static;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: unset;
+    }
+    
+    .job h4 {
+        z-index: 85;
+        position: static;
+        text-align: center;
+        top: 25%;
+        left: 25%;
+        color: #aaa;
+        font-size: 100%;
+        margin-bottom: 0;
+    }
+
+    .staff div div h4 {
+        margin-top: 10px;
     }
 
     .tablet-picture {
@@ -606,30 +621,6 @@ footer>div:last-child {
         text-align: right
     }
 
-    .portrait:hover div.job, .portrait div.job {
-        background: none;
-        opacity: 1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        position: absolute;
-        top: 49%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        cursor: unset;
-    }
-
-    div.job h4 {
-        color: #fff;
-        text-shadow: 0 0 2px #000;
-        text-align: center;
-        font-size: calc((4) * 1.2vw);
-    }
-
-    .staff h4 {
-        font-size: calc((4) * 1.2vw);
-    }
-
     .counters {
         width: 100%;
         margin: 0 auto;
@@ -643,14 +634,14 @@ footer>div:last-child {
     
     .counters h1 {
         margin: 0;
-        font-size: 30px;
+        font-size: 45px;
     }
     .counters h3 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     footer {
-        word-break: break-all;
+        word-break: normal;
         padding: 0;
     }
     footer p {
@@ -706,25 +697,29 @@ footer>div:last-child {
         background: none;
         cursor: unset;
         transition: unset;
-        position: absolute;
+        position: static;
         opacity: 1;
         width: 100%;
         height: 100%;
         border-radius: 50%;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: unset;
     }
     
     .job h4 {
         z-index: 85;
-        position: absolute;
+        position: static;
         text-align: center;
         top: 25%;
         left: 25%;
-        color: #fff;
-        text-shadow: 0 0 3px #000;
-        font-size: 100%
+        color: #aaa;
+        font-size: 100%;
+        margin-bottom: 0;
+    }
+
+    .staff div div h4 {
+        margin-top: 10px;
     }
 
     footer>div {
@@ -752,13 +747,8 @@ footer>div:last-child {
 @media (max-width:349px) {
     
     *, p, h1, h2, h3 {
-        word-break: break-all;
-        hyphens: auto;
-        -ms-hyphens: auto;
-        -o-hyphens: auto;
-        -moz-hyphens: auto;
-        -epub-hyphens: auto;
-        -webkit-hyphens: auto;
+        word-break: normal;
+
     }
 
     .col-xs-1{width:8.33%}
@@ -790,40 +780,53 @@ footer>div:last-child {
         font-size: 20px
     }
 
-    .gallery-tile .layer, .gallery-tile:hover .layer {
-        background: none;
-        opacity: 1;
-        width: unset;
-        height: unset;
-        left: unset;
-        transition: unset;
+    .gallery-tile .layer {
+        width: 100%;
+        height: 100%;
         cursor: pointer;
-        position: absolute;
-        left: 50%;
+        background: none
+    } 
+    .gallery-tile .layer i {
+        z-index: 100;
+        transition: unset
+    }
+
+    .portrait div.job, .portrait:hover div.job {
+        background: none;
+        cursor: unset;
+        transition: unset;
+        position: static;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
+        left: 50%;
+        transform: unset;
     }
     
-    .gallery-tile .layer i, .gallery-tile:hover .layer i {
+    .job h4 {
+        z-index: 85;
         position: static;
-        background: #ccc;
-        padding: 10px;
-        border-radius: 8px;
-        color: #fff;
-        overflow: hidden;
-        transition: unset;
-        z-index: 100;
-        font-size: 30px;
-        opacity: 0.7;
+        text-align: center;
+        top: 25%;
+        left: 25%;
+        color: #aaa;
+        font-size: 100%;
+        margin-bottom: 0;
     }
-    .fa-camera-retro {
-        display: none;
+
+    .staff div div h4 {
+        margin-top: 10px;
     }
 
     .tablet-picture {
-        word-break: break-all;
+        word-break: normal;
     }
     .tablet-picture h1 {
         padding: 0 8vw;
+    }
+    .tablet-picture {
+        background: none;
     }
 }
