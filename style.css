@@ -625,6 +625,8 @@ footer>div:last-child {
 
     .gallery-tile .layer i {
         z-index: 100;
+        padding: 10px;
+        border-radius: 5px;
         transition: unset
     }
 
@@ -804,6 +806,8 @@ footer>div:last-child {
 
     .gallery-tile .layer i {
         z-index: 100;
+        padding: 10px;
+        border-radius: 5px;
         transition: unset
     }
 
@@ -930,13 +934,11 @@ footer>div:last-child {
         position: relative;
     }
 
-    .benefits i {
-        margin-top: 10px;
-        line-height: 40px;
-        width: 40px;
-        height: 40px;
-        vertical-align: middle;
-        font-size: 20px
+    .gallery-tile .layer i {
+        z-index: 100;
+        padding: 10px;
+        border-radius: 5px;
+        transition: unset
     }
 
     .gallery-tile .layer {
