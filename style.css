@@ -1,4 +1,6 @@
-* {box-sizing: border-box}
+* {
+    box-sizing: border-box
+}
 
 body {
     font-family: 'Raleway', Sans-serif;
@@ -8,7 +10,7 @@ body {
 }
 
 h1,
-h2, 
+h2,
 h3 {
     text-transform: uppercase
 }
@@ -31,18 +33,53 @@ h3 {
     min-height: 1px
 }
 
-.col-1{width:8.33%}
-.col-2{width:16.66%}
-.col-3{width:25%}
-.col-4{width:33.33%}
-.col-5{width:41.66%}
-.col-6{width:50%}
-.col-7{width:58.33%}
-.col-8{width:66.66%}
-.col-9{width:75%}
-.col-10{width:83.33%}
-.col-11{width:91.66%}
-.col-12{width:100%}
+.col-1 {
+    width: 8.33%
+}
+
+.col-2 {
+    width: 16.66%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.33%
+}
+
+.col-5 {
+    width: 41.66%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.33%
+}
+
+.col-8 {
+    width: 66.66%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.33%
+}
+
+.col-11 {
+    width: 91.66%
+}
+
+.col-12 {
+    width: 100%
+}
 
 header {
     background-color: #313332
@@ -427,18 +464,53 @@ footer>div:last-child {
 
 @media (max-width:767px) {
 
-    .col-s-1{width:8.33%}
-    .col-s-2{width:16.66%}
-    .col-s-3{width:25%}
-    .col-s-4{width:33.33%}
-    .col-s-5{width:41.66%}
-    .col-s-6{width:50%}
-    .col-s-7{width:58.33%}
-    .col-s-8{width:66.66%}
-    .col-s-9{width:75%}
-    .col-s-10{width:83.33%}
-    .col-s-11{width:91.66%}
-    .col-s-12{width:100%}
+    .col-s-1 {
+        width: 8.33%
+    }
+
+    .col-s-2 {
+        width: 16.66%
+    }
+
+    .col-s-3 {
+        width: 25%
+    }
+
+    .col-s-4 {
+        width: 33.33%
+    }
+
+    .col-s-5 {
+        width: 41.66%
+    }
+
+    .col-s-6 {
+        width: 50%
+    }
+
+    .col-s-7 {
+        width: 58.33%
+    }
+
+    .col-s-8 {
+        width: 66.66%
+    }
+
+    .col-s-9 {
+        width: 75%
+    }
+
+    .col-s-10 {
+        width: 83.33%
+    }
+
+    .col-s-11 {
+        width: 91.66%
+    }
+
+    .col-s-12 {
+        width: 100%
+    }
 
     .benefits p,
     .header-text p,
@@ -535,7 +607,7 @@ footer>div:last-child {
         display: block;
         line-height: 1;
     }
-    
+
     .gallery .col .gallery-tile {
         position: relative;
         width: 100%;
@@ -543,19 +615,21 @@ footer>div:last-child {
         display: block;
         margin: 0 auto;
     }
-    
+
     .gallery-tile .layer {
         width: 100%;
         height: 100%;
         cursor: pointer;
         background: none
-    } 
+    }
+
     .gallery-tile .layer i {
         z-index: 100;
         transition: unset
-    }    
+    }
 
-    .portrait div.job, .portrait:hover div.job {
+    .portrait div.job,
+    .portrait:hover div.job {
         background: none;
         cursor: unset;
         transition: unset;
@@ -568,7 +642,7 @@ footer>div:last-child {
         left: 50%;
         transform: unset;
     }
-    
+
     .job h4 {
         z-index: 85;
         position: static;
@@ -627,15 +701,16 @@ footer>div:last-child {
         padding-top: 20px;
         padding-bottom: 20px
     }
-    
+
     .counters div div {
         padding: 0 4vw
     }
-    
+
     .counters h1 {
         margin: 0;
         font-size: 45px;
     }
+
     .counters h3 {
         font-size: 20px;
     }
@@ -644,27 +719,65 @@ footer>div:last-child {
         word-break: normal;
         padding: 0;
     }
+
     footer p {
         text-align: justify;
     }
+
     footer>div {
         padding: 0 8vw;
     }
 }
+
 @media (min-width:768px) and (max-width:1199px) {
 
-    .col-m-1{width:8.33%}
-    .col-m-2{width:16.66%}
-    .col-m-3{width:25%}
-    .col-m-4{width:33.33%}
-    .col-m-5{width:41.66%}
-    .col-m-6{width:50%}
-    .col-m-7{width:58.33%}
-    .col-m-8{width:66.66%}
-    .col-m-9{width:75%}
-    .col-m-10{width:83.33%}
-    .col-m-11{width:91.66%}
-    .col-m-12{width:100%}
+    .col-m-1 {
+        width: 8.33%
+    }
+
+    .col-m-2 {
+        width: 16.66%
+    }
+
+    .col-m-3 {
+        width: 25%
+    }
+
+    .col-m-4 {
+        width: 33.33%
+    }
+
+    .col-m-5 {
+        width: 41.66%
+    }
+
+    .col-m-6 {
+        width: 50%
+    }
+
+    .col-m-7 {
+        width: 58.33%
+    }
+
+    .col-m-8 {
+        width: 66.66%
+    }
+
+    .col-m-9 {
+        width: 75%
+    }
+
+    .col-m-10 {
+        width: 83.33%
+    }
+
+    .col-m-11 {
+        width: 91.66%
+    }
+
+    .col-m-12 {
+        width: 100%
+    }
 
     header>nav ul {
         margin-right: 8%
@@ -687,13 +800,15 @@ footer>div:last-child {
         height: 100%;
         cursor: pointer;
         background: none
-    } 
+    }
+
     .gallery-tile .layer i {
         z-index: 100;
         transition: unset
     }
 
-    .portrait div.job, .portrait:hover div.job {
+    .portrait div.job,
+    .portrait:hover div.job {
         background: none;
         cursor: unset;
         transition: unset;
@@ -706,7 +821,7 @@ footer>div:last-child {
         left: 50%;
         transform: unset;
     }
-    
+
     .job h4 {
         z-index: 85;
         position: static;
@@ -726,45 +841,89 @@ footer>div:last-child {
         width: 100%;
         margin: 0
     }
+
     footer .line2:after {
-        display: none 
+        display: none
     }
 
     footer>div>.col>p {
         padding: 0 8px
     }
+
     footer p {
         text-align: left;
     }
+
     footer p:first-of-type {
         text-align: justify
     }
+
     footer>div {
         padding: 0 8vw
     }
 }
 
 @media (max-width:349px) {
-    
-    *, p, h1, h2, h3 {
+
+    *,
+    p,
+    h1,
+    h2,
+    h3 {
         word-break: normal;
 
     }
 
-    .col-xs-1{width:8.33%}
-    .col-xs-2{width:16.66%}
-    .col-xs-3{width:25%}
-    .col-xs-4{width:33.33%}
-    .col-xs-5{width:41.66%}
-    .col-xs-6{width:50%}
-    .col-xs-7{width:58.33%}
-    .col-xs-8{width:66.66%}
-    .col-xs-9{width:75%}
-    .col-xs-10{width:83.33%}
-    .col-xs-11{width:91.66%}
-    .col-xs-12{width:100%}
+    .col-xs-1 {
+        width: 8.33%
+    }
 
-    .hero, .hero>div {
+    .col-xs-2 {
+        width: 16.66%
+    }
+
+    .col-xs-3 {
+        width: 25%
+    }
+
+    .col-xs-4 {
+        width: 33.33%
+    }
+
+    .col-xs-5 {
+        width: 41.66%
+    }
+
+    .col-xs-6 {
+        width: 50%
+    }
+
+    .col-xs-7 {
+        width: 58.33%
+    }
+
+    .col-xs-8 {
+        width: 66.66%
+    }
+
+    .col-xs-9 {
+        width: 75%
+    }
+
+    .col-xs-10 {
+        width: 83.33%
+    }
+
+    .col-xs-11 {
+        width: 91.66%
+    }
+
+    .col-xs-12 {
+        width: 100%
+    }
+
+    .hero,
+    .hero>div {
         display: block;
         height: unset;
         min-height: 380px;
@@ -785,13 +944,15 @@ footer>div:last-child {
         height: 100%;
         cursor: pointer;
         background: none
-    } 
+    }
+
     .gallery-tile .layer i {
         z-index: 100;
         transition: unset
     }
 
-    .portrait div.job, .portrait:hover div.job {
+    .portrait div.job,
+    .portrait:hover div.job {
         background: none;
         cursor: unset;
         transition: unset;
@@ -804,7 +965,7 @@ footer>div:last-child {
         left: 50%;
         transform: unset;
     }
-    
+
     .job h4 {
         z-index: 85;
         position: static;
@@ -823,9 +984,11 @@ footer>div:last-child {
     .tablet-picture {
         word-break: normal;
     }
+
     .tablet-picture h1 {
         padding: 0 8vw;
     }
+
     .tablet-picture {
         background: none;
     }
