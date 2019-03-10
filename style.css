@@ -233,7 +233,8 @@ h3.blue-benefit {
 .header-text h1 {
     color: #313332;
     font-size: 28px;
-    margin-top: 0
+    margin-top: 0;
+    word-wrap: break-word;
 }
 
 .header-text p {
@@ -242,7 +243,7 @@ h3.blue-benefit {
     margin-top: 0;
     text-align: center;
     color: #aaa;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 .gallery .col {
@@ -303,11 +304,11 @@ h3.blue-benefit {
 }
 
 .fa-camera-retro {
-    left: 30%
+    left: 20%
 }
 
 .fa-search {
-    left: 60%
+    right: 20%
 }
 
 .staff img {
@@ -371,24 +372,41 @@ div.job {
 
 .tablet-picture {
     width: 100%;
+    padding: 20px 10px 0 10px;
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(#313332, #04c8e9)
 }
 
 .tablet-picture>div {
-    height: 300px;
+    width: 70%;
+    max-width: 1200px;
+    padding: 20px 20px;
     color: #fff;
     margin: 0 auto;
-    max-width: 850px;
-    background-image: url(https://www.plyty-abo.pl/webdev/phone.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 200px
+    vertical-align: bottom;
 }
 
+.tablet-picture>div>div {
+    display: block;
+    vertical-align: bottom;
+    overflow: visible;
+    z-index: 2
+}
+
+.tablet-picture img {
+    display: block;
+    position: relative;
+    padding: 10px 10px 0 10px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: -220px;
+    
+    }
+
 .tablet-picture h1 {
-    padding-top: 40px
+    padding: 10px;
 }
 
 .tablet-picture p {
@@ -396,16 +414,20 @@ div.job {
 }
 
 .counters {
+    position: relative;
+    background-color: #fff;
     width: 70%;
     margin: 0 auto;
     padding-top: 40px;
-    padding-bottom: 40px
+    padding-bottom: 40px;
+    z-index: 200;   
 }
 
 .counters div div {
+    
     text-align: center;
     margin: 0 auto;
-    padding: 0 10px
+    padding: 0 10px;
 }
 
 .counters h1 {
@@ -424,6 +446,7 @@ div.job {
     line-height: 1;
     text-transform: uppercase;
     color: #00c7e8;
+    word-wrap: break-word;
 }
 
 footer {
@@ -444,6 +467,16 @@ footer .line2:after {
     margin-left: 10px;
     border-top: 1px solid #fff
 }
+
+.social-icons {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    }
+.social-icons .col {
+    padding-left: 4px;
+    }
 
 .social-icons i {
     font-size: 20px;
@@ -574,7 +607,7 @@ footer>div:last-child {
         width: 120px;
         height: 120px;
         vertical-align: middle;
-        font-size: 80px
+        font-size: 80px;
     }
 
     .benefits h3,
@@ -595,12 +628,12 @@ footer>div:last-child {
     }
 
     .header-text>div {
-        width: 100%
+        width: 100%;
     }
 
     .header-text h1 {
         margin-top: 20px;
-        font-size: 22px
+        font-size: 22px;
     }
 
     .gallery .col {
@@ -620,14 +653,14 @@ footer>div:last-child {
         width: 100%;
         height: 100%;
         cursor: pointer;
-        background: none
+        background: none;
     }
 
     .gallery-tile .layer i {
         z-index: 100;
         padding: 10px;
         border-radius: 5px;
-        transition: unset
+        transition: unset;
     }
 
     .portrait div.job,
@@ -659,42 +692,20 @@ footer>div:last-child {
     .staff div div h4 {
         margin-top: 10px;
     }
-
-    .tablet-picture {
-        position: relative;
-        background-image: url(https://www.plyty-abo.pl/webdev/phone.png);
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        background-size: 50%
-    }
-
-    .tablet-picture::before {
-        padding: 0;
-        margin: 0;
-        position: absolute;
+    
+    .tablet-picture > div {
         width: 100%;
-        height: 100%;
-        background-position: center;
-        background-image: linear-gradient(#313332, #04c8e9);
-        width: 100%;
-        z-index: -1
+        padding: 20px 5px;
     }
-
-    .tablet-picture>div {
-        display: block;
-        position: relative;
-        min-height: 400px;
-        width: auto;
-        color: #fff;
-        margin: 0 auto;
-        background-image: none
+    
+    .tablet-picture img {
+        width: 50vw;
+        max-width: 50vw;
+        padding: 20px 10px 0 10px;
+        margin-bottom: 0;
     }
-
     .tablet-picture h1 {
-        position: relative;
-        right: 8vw;
-        width: 100%;
-        text-align: right
+        padding: 0 8vw;
     }
 
     .counters {
@@ -840,6 +851,14 @@ footer>div:last-child {
     .staff div div h4 {
         margin-top: 10px;
     }
+    
+    .tablet-picture img {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin-bottom: 0;
+        
+    }
 
     footer>div {
         width: 100%;
@@ -925,6 +944,10 @@ footer>div:last-child {
     .col-xs-12 {
         width: 100%
     }
+    
+    header nav ul li a {
+    font-size: 20px;
+    }
 
     .hero,
     .hero>div {
@@ -932,6 +955,16 @@ footer>div:last-child {
         height: unset;
         min-height: 380px;
         position: relative;
+    }
+    
+    
+    .benefits i {
+        margin-top: 10px;
+        line-height: 60px;
+        width: 60px;
+        height: 60px;
+        vertical-align: middle;
+        font-size: 30px;
     }
 
     .gallery-tile .layer i {
@@ -951,6 +984,14 @@ footer>div:last-child {
     .gallery-tile .layer i {
         z-index: 100;
         transition: unset
+    }
+    
+    .fa-camera-retro {
+    left: 15%
+    }
+
+    .fa-search {
+    right: 15%
     }
 
     .portrait div.job,
@@ -985,13 +1026,34 @@ footer>div:last-child {
 
     .tablet-picture {
         word-break: normal;
+        text-align: justify;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .tablet-picture h1 {
+        margin: 0;
         padding: 0 8vw;
+        font-size: 20px;
+        text-align: center;
     }
-
-    .tablet-picture {
-        background: none;
+    .tablet-picture p {
+        padding: 0 8vw;;
+        text-align: justify;
+    }
+    .tablet-picture > div {
+        padding: 0;
+        width: 90%;
+    }
+    .tablet-picture img {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    .counters h1 {
+    display: block;
+    font-size: 35px;
     }
 }
